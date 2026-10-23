@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Illustrative auto repair garage website prototype for Lahore.">
+  <title>Roundabout Garage — Lahore Auto Service Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="garage-page">
+  <header class="site-nav garage-nav">
+    <a class="site-brand" href="index.html">Local Web Concepts</a>
+    <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#process">Our process</a><a href="#visit">Visit</a></nav>
+    <a class="nav-action" href="#book">Ask the mechanic</a>
+  </header>
+  <main>
+    <section class="garage-hero">
+      <div class="garage-hero-copy"><p class="garage-location">Auto care · Lahore</p><h1>Know what’s<br>under the hood.</h1><p>Clear inspections and straightforward repairs for the miles ahead.</p><a class="garage-button" href="#book">Tell us what’s wrong</a></div>
+      <figure class="garage-hero-image"><img src="assets/garage-demo.png" alt="A mechanic checking a wheel assembly in a neighborhood garage"><figcaption>Roundabout Garage · Sample identity and imagery</figcaption></figure>
+      <div class="wheel-motif" aria-hidden="true"><span></span><i></i></div>
+    </section>
+    <section class="garage-services section-pad" id="services">
+      <div class="garage-heading"><p>Start with a check</p><h2>Repairs with<br>the why included.</h2></div>
+      <div class="garage-list">
+        <article><div><h3>Inspection &amp; diagnosis</h3><p>We look, test, then explain the options before work begins.</p></div><span>By appointment</span></article>
+        <article><div><h3>Brakes &amp; suspension</h3><p>Noise, pull or vibration? We check the parts that affect your stop and ride.</p></div><span>Quote after inspection</span></article>
+        <article><div><h3>Oil &amp; routine service</h3><p>Scheduled maintenance matched to your vehicle and driving.</p></div><span>Ask for a slot</span></article>
+      </div>
+    </section>
+    <section class="garage-process" id="process">
+      <div class="process-copy"><p>How it works</p><h2>Look first.<br>Agree on the fix.</h2><ol><li><span>Tell us the symptom and your vehicle.</span></li><li><span>We inspect it and explain what we find.</span></li><li><span>You approve the estimate before repairs begin.</span></li></ol></div>
+      <img src="assets/garage-tools.png" alt="Diagnostic tools and a brake assembly on a workshop bench">
+    </section>
+    <section class="garage-book section-pad" id="book">
+      <div><p>Let’s take a look</p><h2>Describe the<br>sound or symptom.</h2><p>This prototype opens an email draft. Replace the address with the garage’s real contact channel.</p></div>
+      <form class="prototype-form" data-mailto="service@example.com" data-subject="Vehicle inspection request">
+        <label>Your name<input name="name" autocomplete="name" required placeholder="Name"></label>
+        <label>Vehicle<input name="vehicle" required placeholder="Make and model"></label>
+        <label>What have you noticed?<textarea name="concern" rows="3" required placeholder="A short description"></textarea></label>
+        <button class="garage-button" type="submit">Request an inspection</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer garage-footer" id="visit"><div><a class="footer-brand" href="index.html">Roundabout Garage</a><p>Illustrative concept · Sample location and services</p></div><div><p>Township, Lahore</p><p>Monday to Saturday · 9 am–7 pm</p><a href="mailto:service@example.com">service@example.com</a></div></footer>
+  <script src="demos.js"></script>
+</body>
+</html>

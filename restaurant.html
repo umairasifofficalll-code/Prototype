@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Illustrative restaurant website prototype for a Lahore charcoal grill.">
+  <title>Charcoal &amp; Naan — Lahore Restaurant Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="restaurant-page">
+  <header class="site-nav restaurant-nav">
+    <a class="site-brand" href="index.html">Local Web Concepts</a>
+    <nav aria-label="Main navigation"><a href="#menu">Menu</a><a href="#story">Our table</a><a href="#visit">Visit</a></nav>
+    <a class="nav-action" href="#book">Book a table</a>
+  </header>
+  <main>
+    <section class="restaurant-hero">
+      <div class="restaurant-photo"><img src="assets/restaurant-demo.png" alt="Charcoal kebabs and naan at a Lahore rooftop table"></div>
+      <div class="menu-sheet">
+        <p class="sheet-place">Old Lahore · Open evenings</p>
+        <h1>Charcoal<br>&amp; Naan</h1>
+        <p class="sheet-intro">A little smoke, a hot naan, and one more round around the table.</p>
+        <div class="sheet-bottom"><span>Grill · Tandoor · Shared plates</span><a href="#menu">Read the menu ↓</a></div>
+      </div>
+      <p class="hero-caption">A sample restaurant concept · Lahore, Pakistan</p>
+    </section>
+    <section class="restaurant-menu section-pad" id="menu">
+      <div class="section-heading">
+        <p>Made for sharing</p>
+        <h2>Fire, bread<br>and good company.</h2>
+      </div>
+      <div class="menu-content">
+        <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+          <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="menu-items" data-menu="grill">From the grill</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-items" data-menu="bread">From the tandoor</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="menu-items" data-menu="sweet">Something sweet</button>
+        </div>
+        <div class="menu-results" aria-live="polite">
+          <div class="menu-items" id="menu-items" role="tabpanel" tabindex="0">
+            <article><div><h3>Smoky seekh kebab</h3><p>Beef, green chilli, mint chutney</p></div><strong>Rs 1,250</strong></article>
+            <article><div><h3>Charred chicken tikka</h3><p>Yogurt marinade, lemon, house spice</p></div><strong>Rs 1,450</strong></article>
+            <article><div><h3>Grilled paneer plate</h3><p>Paneer, peppers, coriander</p></div><strong>Rs 1,100</strong></article>
+          </div>
+          <img class="menu-photo" src="assets/restaurant-menu.png" alt="Tikka, seekh kebab, naan and chutney on a dark table">
+        </div>
+      </div>
+    </section>
+    <section class="restaurant-story" id="story">
+      <img src="assets/restaurant-courtyard.png" alt="A courtyard table set for dinner beneath warm lanterns">
+      <div class="story-copy"><p>At the table</p><h2>One more plate<br>for the middle.</h2><p>Our sample kitchen is built around the familiar Lahore rhythm: a slow evening, a hot tandoor, and dishes that arrive when they are ready to share.</p><a class="text-link" href="#book">Save a seat <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="restaurant-book section-pad" id="book">
+      <div class="booking-intro"><p>Come hungry</p><h2>We’ll keep<br>your place.</h2><p>Send a reservation request. This demo opens an email draft; connect the restaurant’s real booking channel before launch.</p></div>
+      <form class="prototype-form" data-mailto="reservations@example.com" data-subject="Table reservation request">
+        <label>Your name<input name="name" autocomplete="name" required placeholder="Name"></label>
+        <label>When<input name="date" type="date" required></label>
+        <label>Guests<select name="guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+        <button class="restaurant-button" type="submit">Request a table</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer restaurant-footer" id="visit"><div><a class="footer-brand" href="index.html">Charcoal &amp; Naan</a><p>Illustrative concept · Replace all sample details before client use</p></div><div><p>Old City, Lahore</p><p>Evenings · Tuesday to Sunday</p><a href="mailto:reservations@example.com">reservations@example.com</a></div></footer>
+  <script src="demos.js"></script>
+</body>
+</html>

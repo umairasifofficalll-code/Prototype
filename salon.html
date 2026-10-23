@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Illustrative hair studio website prototype for Lahore.">
+  <title>Rang Studio — Lahore Hair Studio Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="salon-page">
+  <header class="site-nav salon-nav">
+    <a class="site-brand" href="index.html">Local Web Concepts</a>
+    <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#studio">The studio</a><a href="#visit">Visit</a></nav>
+    <a class="nav-action" href="#book">Book a chair</a>
+  </header>
+  <main>
+    <section class="salon-hero">
+      <div class="salon-hero-copy"><p class="salon-location">Hair studio · Lahore</p><h1>Good hair,<br>your own way.</h1><p>Cut, colour, and care shaped around the person in the chair.</p><a class="salon-button" href="#book">Find a time</a></div>
+      <figure class="salon-hero-image"><img src="assets/salon-demo.png" alt="A stylist shaping a client's dark bob haircut"><figcaption>Rang Studio · Sample identity and imagery</figcaption></figure>
+      <div class="scissor-mark" aria-hidden="true"><span></span><span></span><i></i><b></b></div>
+    </section>
+    <section class="salon-services section-pad" id="services">
+      <div class="salon-heading"><p>Time well spent</p><h2>Start with what<br>your hair needs.</h2></div>
+      <div class="service-list">
+        <article><div><h3>The considered cut</h3><p>Wash, consultation and a shape that works at home.</p></div><span>from Rs 3,500</span></article>
+        <article><div><h3>Colour refresh</h3><p>Root touch-up or a full change, planned together.</p></div><span>from Rs 7,500</span></article>
+        <article><div><h3>Care ritual</h3><p>Scalp cleanse, deep conditioning and a slow finish.</p></div><span>from Rs 2,800</span></article>
+      </div>
+    </section>
+    <section class="salon-studio" id="studio">
+      <div class="studio-image"><img src="assets/salon-tools.png" alt="Shears, comb and folded towel arranged on a salon counter"></div>
+      <div class="studio-copy"><p>Inside the studio</p><h2>A little room<br>to reset.</h2><p>Rang is a sample neighborhood studio concept: considered appointments, a calm chair, and a stylist who listens before reaching for the scissors.</p><p class="studio-address">Gulberg · Lahore<br>Tuesday to Sunday · 11 am–8 pm</p></div>
+    </section>
+    <section class="salon-book section-pad" id="book">
+      <div><p>Make it yours</p><h2>Let’s find<br>your time.</h2><p>This demo creates an email request. Replace it with the studio’s real booking channel.</p></div>
+      <form class="prototype-form" data-mailto="hello@example.com" data-subject="Salon appointment request">
+        <label>Your name<input name="name" autocomplete="name" required placeholder="Name"></label>
+        <label>What are you looking for?<select name="service"><option>Considered cut</option><option>Colour refresh</option><option>Care ritual</option></select></label>
+        <label>Best contact<input name="contact" required placeholder="Phone or email"></label>
+        <button class="salon-button" type="submit">Request an appointment</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer salon-footer" id="visit"><div><a class="footer-brand" href="index.html">Rang Studio</a><p>Illustrative concept · Sample prices and details</p></div><div><p>Gulberg, Lahore</p><p>Tuesday to Sunday · 11 am–8 pm</p><a href="mailto:hello@example.com">hello@example.com</a></div></footer>
+  <script src="demos.js"></script>
+</body>
+</html>
